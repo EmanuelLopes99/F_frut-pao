@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #122b40;
+    transition: all 500ms linear;
+}
+
+#sidebar.active{
+    left: -200px;
+}
+
+#sidebar ul li{
+    color: white;
+    list-style: none;
+    padding: 10px 10px;
+}
+
+#sidebar ul li a{
+    text-decoration: none;
+    color:#fff ;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 205px;
+    top: 25px;
+    cursor: pointer;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #ffffff;
+    margin: 5px 0px;
+}
+
+#sidebar .logo1 img{
+    width: 60px;
+    margin: 10px 70px;
+}
+
+.nav-logo{
+    background: #122b40;
+    height: 80px;
+}
+
+.logo img{
+    width: 60px;
+    margin: 10px 70px;
+}
+.user-content{
+    float: right;
+    margin-top: -70px;
+    margin-right: 40px;
+}
+
+.menu-user{
+    float: right;
+    right: 0;
+    background: #3c3c3c;
+    display: none;
+}
+
+.menu-user ul li{
+    list-style: none;
+    padding: 10px;
+    color: #fff;
+}
+
+.user:hover menu-user{
+    display: block;
+}
+
+.user-content a img{
+    width: 60px;
+}
+
+.item-user{
+    width: 200px;
+    height: auto;
+    margin-top: 0px;
+    float: right;
+    background: #0f0f0f;
+    display: none;
+}
+
+.item-user ul li{
+    color: white;
+    list-style: none;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.item-user li a{
+    text-decoration: none;
+}
+
+.prt-header{
+
+    height: 100px;
+    background: #122b40;
+}
+.avatar{
+    float: right;
+    width: 5%;
+    margin-top: -70px;
+    margin-right: 5px;
+}
+
+.navbar a{
+    float:left;
+    display:block;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.navbar ul{
+    margin:8px 0 0 0;
+    list-style:none;
+}
+
+.navbar a:hover{
+    background-color:#ddd;
+    color:#000;
+}
+
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0px;
+    left:0;
+    background: #122b40;
+    overflow-x:hidden;
+    padding-top:120px;
+    transition:0.5s;
+}
+.user-form{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background: #2b542c;
+}
+
+.side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+}
+
+.side-nav a:hover{
+    color:#fff;
+}
+
+.side-nav .btn-close{
+    position:absolute;
+    top:0;
+    right:22px;
+    font-size:36px;
+    margin-left:50px;
+}
+
+.menu-pricipal{
+    float: right;
+    list-style: none;
+    margin-top: -70px;
+    text-align: center;
+}
+
+.menu-pricipal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.menu-pricipal a {
+    display: block;
+    text-decoration: none;
+    padding: 0px;
+    color: #000;
+
+}
+.submenu{
+    width: 250px;
+    margin-right: -50px;
+    background-color: #eee;
+}
+
+.menu-pricipal li:hover .submenu {
+    display: block;
+    max-height: 200px;
+    margin-top: 15.5px;
+
+}
+
+.submenu a {
+    width: 250px;
+    margin-right: 15px;
+    padding: 5px;
+    font-family: sans-serif;
+
+
+}
+.submenu a:hover {
+    color: #ac2925;
+}
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.direita nav a:link, .direita a:visited {
+    color:#red;
+    display: block;
+    padding: 10px 25px;
+
+}
+
+.direita nav a:hover, .direita a:active, .direita nav .active a:link, .direita .active a:visited {
+    background-color: #CCC;
+    text-shadow: none;
+    color: #fff;
+
+}
+
+/*Estilizar footer */
+.footer {
+  background: #333333;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
