@@ -22,6 +22,10 @@ body{
     padding: 10px 10px;
 }
 
+#sidebar a:hover{
+    background: #122b40;
+}
+
 #sidebar ul li a{
     text-decoration: none;
     color:#fff ;
@@ -188,7 +192,7 @@ body{
     margin: 0;
 
 }
-.menu-pricipal a {
+.menu-pricipal li a {
     display: block;
     text-decoration: none;
     padding: 0px;
@@ -213,7 +217,7 @@ body{
     margin-right: 15px;
     padding: 5px;
     font-family: sans-serif;
-
+    text-decoration: none;
 
 }
 .submenu a:hover {
@@ -239,11 +243,27 @@ body{
 
 }
 
-/*Estilizar footer */
-.footer {
-  background: #333333;
-  color: #ffffff;
-  padding: 10px;
-  margin-top: 30px;
-  text-align: center;
+/*estelezar o botao logout*/
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+    color: #000;
 }
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+

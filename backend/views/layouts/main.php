@@ -22,9 +22,8 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googlespis.com/ajax/libs/jquery/3.11/jquery.min.js"></script>
     <script src="js.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
 
     <title>Frut&Pao</title>
     <?php $this->head() ?>
@@ -49,13 +48,13 @@ AppAsset::register($this);
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Frut&Pão
                     <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="background-color: #122b40">
                       <li><a href="#">xxxxxxxxx</a></li>
                       <li><a href="#">xxxxxxxxx</a></li>
                       <li><a href="#">xxxxxxxxx</a></li>
                       <li><a href="#">xxxxxxxxx</a></li>
                     </ul>
-                </li>
+                </li> 
                 <li><a href="index.php?r=promocaogaleria/index">Promoções</a></li>
                 <li><a href="index.php?r=contacto/index">Contactos</a></li>
             </ul>
@@ -63,7 +62,7 @@ AppAsset::register($this);
 
         <nav class="nav-logo">
             <div class="logo">
-                <img src="img/logo.png">
+                <img src="@web/img/logo.png">
             </div>
         </nav>
 
@@ -72,8 +71,7 @@ AppAsset::register($this);
             <ul class="menu-pricipal">
                 <li><span class="perfil"></span><a href="#user"><img src="img/avatar.png" style="width: 50px;"></a>
                     <ul class="submenu">
-                        <li><a href="index.php?r=usuario/index">Meus Dados</a></li>
-                        <li><a href="#">Setting</a></li>
+                        <li><a href="index.php?r=usuario/index" style="margin-top: 15px;">Meus Dados</a></li>
                         <?php 
                         if (Yii::$app->user->isGuest) {
                             $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
